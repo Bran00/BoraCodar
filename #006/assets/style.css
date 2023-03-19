@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  --fw-primary: 500;
+  --fw-secondary: 400;
+    font-size: 62.5%;
+  --box-primary: 0px 4px 24px 0px hsla(0, 0%, 0%, 0.25);
+  --bg-primary: hsla(0, 0%, 100%, 1);
+}
+
+body {
+  background: linear-gradient(167.96deg, #8257E5 0%, #271A45 90%, #271A45 100%) no-repeat;
+  height: 120vh;
+  background-attachment: cover;
+  margin-top: 2rem;
+  font-family: 'Rubik', sans-serif;
+  font-weight: var(--fw-secondary);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+strong {
+  font-weight: var(--fw-primary);
+  color: black;
+}
+
+main {
+  font-size: 1.6rem;
+  color: hsla(0, 0%, 0%, 0.64);
+  margin: 1rem;
+}
+
+p {
+  color: hsla(0, 0%, 0%, 0.64);
+  font-weight: var(--fw-secondary);
+}
+
+body > p {
+  font-size: 2rem;
+  color: white;
+  font-weight: var(--fw-primary);
+  padding: 1.5rem;
+}
+
+#planeInformations {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 2.5rem 0;
+  font-weight: var(--fw-secondary);
+  background-color: hsla(0, 0%, 100%, 1);
+  border-radius: 2.4rem;
+  box-shadow: var(--box-primary);
+}
+
+#planeData {
+  display: flex;
+  justify-content: space-between;
+}
+
+#planePlace {
+  display: flex;
+  justify-content: space-between;
+  gap: 4rem;
+  margin-top: 2rem;
+}
+
+#plane img {
+  position: relative;
+  top: -5.6rem;
+  left: -2rem;
+}
+
+#plane .city {
+  text-align: end;
+  width: 100%;
+  background-color: red;
+}
+
+#delay {
+  font-size: 1rem;
+  position: relative;
+  top: -0.5rem;
+}
+
+.left {
+  text-align: end;
+}
+
+.destak {
+  font-size: 4rem;
+}
+
+#namePasseger {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--bg-primary);
+  padding: 2.5rem;
+  border-radius: 2.4rem;
+  border-top: 2px dashed hsla(0, 0%, 0%, 0.32);
+}
+
+#timeToBoarding {
+  display: flex;
+  justify-content: space-between;
+  padding: 2.5rem;
+  border-top: 2px dashed hsla(0, 0%, 0%, 0.32);
+  background-color: var(--bg-primary);
+  border-radius: 2.4rem 2.4rem 0 0;
+}
+
+#qrcode {
+  width: 18.5rem;
+  height: 17.7rem;
+}
+
+.timeGate {
+  padding: 0.4rem 1rem;
+  display: flex;
+  align-items: start;
+  width: 6.4rem;
+  background-color: hsla(259, 52%, 48%, 1);
+  color: white;
+  font-weight: var(--fw-primary);
+  border-radius: 1rem;
+}
+
+.row {
+  display: flex;
+  gap: 1.6rem;
+  flex-direction: column;
+}
+
+.note {
+  background-color: white;
+  padding: 0 0 2.5rem;
+  border-radius: 0 0 2.4rem 2.4rem;
+  text-align: center;
+}
+
+.hours {
+  font-weight: var(--fw-secondary);
+  color: hsla(0, 0%, 0%, 0.8) !important;
+}
+
+footer {
+  color: white;
+  font-size: 1.6rem;
+  text-align: center;
+  background-color: transparent;
+}
+
+footer p{
+  background-color: transparent;
+  color: white;
+  margin-top: 2.5rem;
+}

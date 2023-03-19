@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sales Panel</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  </head>
+  <body>
+    <section id="results">
+      <div class="face">
+        <p><strong>NPS Geral</strong></p>
+
+        <img src="assets/Group 3.svg" alt="Um emoji" />
+
+        <p class="green"><strong>Excelente</strong></p>
+
+        <p>NPS Score <span class="number"> 75</span></p>
+      </div>
+      <div class="sales">
+        <p><strong>Vendas fechadas</strong></p>
+        <div class="div">
+          <div class="box">
+            <div class="box-circle">
+              <svg>
+                <circle cx="80" cy="80" r="80"></circle>
+                <circle cx="80" cy="80" r="80"></circle>
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="cover">
+          <p><strong class="numberDestak">70%</strong><br />alcançada</p>
+        </div>
+        <div class="destak">
+          <p>
+            <img src="assets/elipse-without.svg" alt="" /> Esperado
+            <span class="number">100</span></p>
+            <p>
+            <img class="purple" src="assets/purple.svg" alt="" />
+            Alcançado <span class="number">70</span>
+          </p>
+        </div>
+      </div>
+      <div class="meta">
+        <p><strong>Meta Mensal</strong></p>
+
+        <div id="graphicCircle2">
+          <div class="div">
+            <div class="box">
+              <div class="box-circle">
+                <svg>
+                  <circle cx="80" cy="80" r="80"></circle>
+                  <circle cx="80" cy="80" r="80"></circle>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="metaDetails cover">
+            <p><strong class="numberDestak">90%</strong><br />alcançada</p>
+          </div>
+        </div>
+        <div class="destak">
+          <p><img src="assets/elipse-without.svg" alt="" /> Esperado <span class="number">R$ 70k</span></p>
+          <p>
+            <img src="assets/purple.svg" alt="" />
+            Alcançado <span class="number">R$ 63k</span>
+          </p>
+        </div>
+      </div>
+    </section>
+    <section id="details">
+      <div class="salesDay">
+        <p><strong>Vendas por dia da semana</strong></p>
+        <p>
+          <img src="assets/green.svg" alt="" /> Dia com mais vendas
+          <span><br />quarta-feira</span>
+        </p>
+        <p>
+          <img src="assets/red.svg" alt="" /> Dia com menos vendas
+          <span><br />domingo</span>
+        </p>
+      </div>
+      <div>
+        <div class="resume">
+          <svg class="line">
+            <line x1="0" y1="0" x2="900" y2="0" />
+          </svg>
+        </div>
+        <div id="graphicsLine">
+          <p class="candle" id="dom"></p>
+          <p class="candle" id="seg"></p>
+          <p class="candle" id="ter"></p>
+          <p class="candle" id="qua"></p>
+          <p class="candle" id="qui"></p>
+          <p class="candle" id="sex"></p>
+          <p class="candle" id="sab"></p>
+        </div>
+        <div class="daysWeek">
+          <p>dom</p>
+          <p>seg</p>
+          <p>ter</p>
+          <p>qua</p>
+          <p>qui</p>
+          <p>sex</p>
+          <p>sab</p>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
