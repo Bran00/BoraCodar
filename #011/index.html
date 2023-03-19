@@ -1,33 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Login</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="assets/style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@48,100,0,0" />
+  <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
   <main>
-    <section>
-      <h1><span>img</span>Vertigo</h1>
+    <section id="first">
+      <img src="assets/logo.svg" alt="logo da empresa" />
       <div>
-        <p><strong>Acesse a plataforma</strong></p>
+        <h1>Acesse a plataforma</h1>
         <p>Faça login ou registre para começar a construir seus projetos ainda hoje.</p>
       </div>
-      <fom>
+      <form>
         <label for="email">E-mail</label>
         <input type="email" name="email" id="email" placeholder="Digite seu e-mail">
-
-        <label for="password">Senha</label>
         <p>Esqueceu sua senha</p>
+        <label for="password">Senha</label>
         <input type="password" name="password" id="password" placeholder="Digite sua senha">
-        <button><i></i></button>
+        <span class="material-symbols-sharp">
+        visibility_off
+        </span>
         <button type="submit">Entrar</button>
-      </fom>
-      <p>Ainda não tem uma conta?<span>Inscreva-se</span></p>
+      </form>
+      <p>Ainda não tem uma conta?<a href="#">Inscreva-se</a></p>
     </section>
-    <section>img de backfroung</section>
+    <section>
+      <p>img de background</p>
+
+    </section>
   </main>
 </body>
 </html>
