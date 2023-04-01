@@ -2,4 +2,4 @@
  
  ![mykarban!](assets/Meu-Kanban-.gif)
 
- Build in HTML and CSS!
+ Build in HTML and CSS alone!
