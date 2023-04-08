@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  font-size: 62.5%;
+  font-family: 'Inter', sans-serif;
+
+  --color-purple: hsla(251, 79%, 65%, 1);
+  --color-gray: hsl(258, 7%, 29%);
+}
+
+body {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.purple {
+  color: var(--color-purple)
+}
+
+.green {
+  color: hsla(119, 29%, 57%, 1);
+}
+
+.red {
+  color: hsla(0, 70%, 64%, 1);
+}
+
+.uploadFile {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border: .1rem dashed hsla(252, 88%, 84%, 0.30);
+  padding-bottom: 3.2rem;
+  background-color: hsla(252, 88%, 84%, 0.20);
+  border-radius: .8rem;
+}
+
+.uploadFile:hover {
+  cursor: url('dropFile.png'), pointer;
+}
+
+.uploadFile img {
+  margin-bottom: 1.2rem;
+  margin-top: 2.8rem;
+}
+
+.uploadFile p {
+  color: var(--color-gray);
+  font-weight: 400;
+  font-size: 1.4rem;
+}
+
+.uploadFile p strong {
+  color: var(--color-purple);
+  font-size: 1.6rem;
+  margin-bottom: none !important;
+}
+
+.showFile {
+  display: flex;
+  width: max-content;
+  height: max-content;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.kindFile {
+  display: flex;
+  box-shadow: 0px 4px 16px hsl(258, 87%, 94%);
+  padding: .8rem;
+}
+
+.nameFile {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-left: .4rem;
+}
+
+.nameFile p strong {
+  font-weight: 700;
+  font-size: 1.4rem;
+  color: var(--color-gray) !important;
+  margin-bottom: .2rem;
+  opacity: 1;
+}
+
+.nameFile p {
+  color: hsl(0, 0%, 58%);
+}
+
+.nameFile img {
+  margin-top: 1.8rem;
+  border-radius: 2rem;
+}
+
+.quantity {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: .4rem;
+}
+
+.quantity .green {
+  height: 100%;
+  margin-top: 4.4rem;
+}
+
