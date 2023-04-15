@@ -1,0 +1,171 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  font-size: 62.5%;
+  
+  font-family: 'Titillium Web', sans-serif;
+  
+  --purple-200: hsla(262, 83%, 58%, 1);
+  --gray-800: hsla(217, 33%, 17%, 1);
+  --gray-600: hsla(215, 19%, 35%, 1);
+  --gray-500: hsla(215, 16%, 47%, 1);
+  --gray-300: hsla(213, 27%, 84%, 1);
+  --gray-50: hsla(210, 40%, 98%, 1);
+}
+
+main {
+  display: flex;
+  height: fit-content;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: hsla(210, 40%, 98%, 1);
+  gap: 4rem;
+  padding: 8rem 2rem;
+}
+
+button {
+  padding: 1.6rem 2.4rem;
+  border: .1rem solid var(--gray-800);
+  color: var(--gray-800);
+  font-weight: 700;
+  font-size: 1.6rem;
+  font-family: 'Titillium Web', sans-serif;
+  border-radius: .4rem;
+  background-color: transparent;
+}
+
+button:hover {
+  background-color: var(--gray-800);
+  color: var(--gray-50);
+  transition: all 0.5s ease-in;
+}
+
+.divider {
+  width: 100%;
+  border: 1px solid hsla(214, 32%, 91%, 1);
+}
+
+
+.card {
+  display: flex;
+  flex-direction: column;
+  background-color: hsla(0, 0%, 100%, 1);
+  border: .1rem solid hsla(214, 32%, 91%, 1);
+  border-radius: 1rem;
+  gap: 1.6rem;
+  padding: 2.4rem;
+}
+
+.card p {
+  font-weight: 600;
+  font-size: 1.4rem;
+  color: var(--purple-200) !important;
+}
+
+.next {
+  display: flex;
+  justify-content: space-between;
+  gap: 4rem;
+  align-items: center;
+}
+
+.next p {
+  font-weight: 400;
+  font-size: 1.8rem;
+  color: var(--gray-800) !important;
+}
+
+.next p span {
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.next p strong {
+  font-weight: 700;
+  font-size: 2.4rem;
+  color: var(--gray-800) !important;
+}
+
+.end {
+  display: flex;
+}
+
+.end p {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: var(--gray-600) !important;
+}
+
+.end p span:nth-child(1) {
+  color: green;
+}
+
+.two {
+  background-color: hsla(14, 86%, 13%, 1);
+}
+
+.two .next p strong {
+  color: var(--gray-50) !important;
+}
+
+.two .next p {
+  color: var(--gray-50) !important;
+}
+
+.purple {
+  background-color: hsl(258, 100%, 30%);
+  color: var(--gray-50);
+}
+
+.purple:hover {
+  background-color: hsl(240, 95%, 61%);
+  transition: all 0.5s ease-in;
+}
+
+.two .divider {
+  border: .1rem solid hsl(0, 82%, 18%);
+}
+
+.two .end p {
+  color: rgb(141, 138, 138) !important;
+}
+
+.three {
+  gap: 1.6rem;
+  width: 80%;
+}
+
+.three p strong {
+  font-weight: 700;
+  font-size: 2.4rem;
+  color: var(--gray-800) !important;
+}
+
+.three .end p {
+  gap: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  main {
+    flex-direction: row;
+    align-items: flex-start;
+    height: max-content;
+
+  }
+
+  .card {
+    height: 100%;
+    width: 38.4rem;
+    height: 45.4rem;
+  }
+}
